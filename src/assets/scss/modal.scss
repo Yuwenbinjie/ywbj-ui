@@ -1,0 +1,51 @@
+.yw-modal {
+    color: rgb(51, 51, 51);
+    &-mask {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(55, 55, 55, 0.6);
+        height: 100%;
+    }
+    &-warp {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: white;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    &-full {
+        width: 100%!important;
+        height: 100%;
+        .yw-modal-footer {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+        }
+    }
+    &-cancel {
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        font-size: 30px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    &-body {
+        margin: 30px 0px;
+    }
+    &-footer {
+        text-align: right;
+    }
+}
